@@ -1,0 +1,7 @@
+## v.0.1.1
+
+* Forked from https://github.com/phbergsmann/chef-locales
+* Use locale-gen instead dpkg-reconfigure
+* Add header with chef warn to templates
+* Add author and license info to files
+* Create changelog

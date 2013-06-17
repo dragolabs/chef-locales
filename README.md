@@ -4,6 +4,8 @@ Description
 This cookbook configures the available and default locales on a debian-like-system.
 It also includes a LWRP for easy use in other cookbooks.
 
+Forked from original cookbook by opendo GmbH.
+
 Requirements
 ============
 
@@ -28,8 +30,10 @@ end
 
 License and Author
 ==================
+Author: Vitaly Shishlyannikov <vitaly@dragolabs.org>
 
-Author: Philipp Bergsmann (<p.bergsmann@opendo.at>)
+Original cookbook: https://github.com/phbergsmann/chef-locales
+Original Author: Philipp Bergsmann (<p.bergsmann@opendo.at>)
 
 Copyright: 2013 opendo GmbH (http://opendo.at)
 
