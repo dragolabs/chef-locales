@@ -17,6 +17,17 @@
 # limitations under the License.
 #
 
+package "locales" do
+  action :install
+end
+
+
+execute "locale-gen" do
+  command "locale-gen"
+  action :nothing
+end
+
+
 template "/etc/locale.gen" do
   source "locale.gen.erb"
   cookbook "locales"
@@ -26,10 +37,6 @@ template "/etc/locale.gen" do
   notifies :run, "execute[locale-gen]", :immediately
 end
 
-execute "locale-gen" do
-  command "locale-gen"
-  action :run
-end
 
 template "/etc/default/locale" do
   source "locale.erb"
